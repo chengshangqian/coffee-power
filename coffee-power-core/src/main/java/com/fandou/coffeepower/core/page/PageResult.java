@@ -4,8 +4,6 @@ import java.util.List;
 
 /**
  * 分页返回结果
- * @author Louis
- * @date Jan 12, 2019
  */
 public class PageResult {
 	/**

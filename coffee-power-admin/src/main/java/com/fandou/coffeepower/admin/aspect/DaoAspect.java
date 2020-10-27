@@ -19,8 +19,6 @@ import com.fandou.coffeepower.common.utils.StringUtils;
 
 /**
  * DAO切面，插入创建人，创建时间，修改人，修改时间
- * @author Louis
- * @date Oct 29, 2018
  */
 @Aspect
 @Component

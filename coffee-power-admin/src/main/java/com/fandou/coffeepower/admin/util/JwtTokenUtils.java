@@ -19,8 +19,6 @@ import io.jsonwebtoken.SignatureAlgorithm;
 
 /**
  * JWT工具类
- * @author Louis
- * @date Jan 14, 2019
  */
 public class JwtTokenUtils implements Serializable {
 
@@ -50,7 +48,7 @@ public class JwtTokenUtils implements Serializable {
     /**
 	 * 生成令牌
 	 *
-	 * @param userDetails 用户
+	 * @param authentication 用户认证信息
 	 * @return 令牌
 	 */
 	public static String generateToken(Authentication authentication) {
@@ -91,7 +89,7 @@ public class JwtTokenUtils implements Serializable {
 	
 	/**
 	 * 根据请求令牌获取登录认证信息
-	 * @param token 令牌
+	 * @param request 请求
 	 * @return 用户名
 	 */
 	public static Authentication getAuthenticationeFromToken(HttpServletRequest request) {

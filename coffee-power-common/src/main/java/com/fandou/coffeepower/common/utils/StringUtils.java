@@ -2,8 +2,6 @@ package com.fandou.coffeepower.common.utils;
 
 /**
  * 字符串工具类
- * @author Louis
- * @date Sep 1, 2018
  */
 public class StringUtils {
 

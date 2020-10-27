@@ -9,12 +9,10 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.alibaba.fastjson.JSONObject;
-import com.fandou.coffeepower.core.http.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 
 /**
  * HTTP工具类
- * @author Louis
- * @date Jan 19, 2019
  */
 public class HttpUtils {
 
@@ -25,11 +23,12 @@ public class HttpUtils {
 	public static HttpServletRequest getHttpServletRequest() {
 		return ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
 	}
-	
+
 	/**
 	 * 输出信息到浏览器
 	 * @param response
-	 * @param message
+	 * @param code
+	 * @param msg
 	 * @throws IOException
 	 */
 	public static void print(HttpServletResponse response, int code, String msg) throws IOException {
@@ -40,5 +39,4 @@ public class HttpUtils {
         response.getWriter().flush();
         response.getWriter().close();
 	}
-	
 }

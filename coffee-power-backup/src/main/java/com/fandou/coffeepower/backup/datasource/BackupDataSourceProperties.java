@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @date Jan 15, 2019
  */
 @Component  
-@ConfigurationProperties(prefix = "mango.backup.datasource")  
+@ConfigurationProperties(prefix = "coffee-power.backup.datasource")
 public class BackupDataSourceProperties {
 	
 	private String host;

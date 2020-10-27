@@ -4,8 +4,6 @@ import java.io.IOException;
 
 /**
  * MySql命令行备份恢复服务
- * @author Louis
- * @date Jan 15, 2019
  */
 public interface MysqlBackupService {
 
@@ -14,9 +12,9 @@ public interface MysqlBackupService {
 	 * @param host host地址，可以是本机也可以是远程
 	 * @param userName 数据库的用户名
 	 * @param password 数据库的密码
-	 * @param savePath 备份的路径
+	 * @param backupFolderPath 备份的路径
 	 * @param fileName 备份的文件名
-	 * @param databaseName 需要备份的数据库的名称
+	 * @param database 需要备份的数据库的名称
 	 * @return
 	 * @throws IOException 
 	 */

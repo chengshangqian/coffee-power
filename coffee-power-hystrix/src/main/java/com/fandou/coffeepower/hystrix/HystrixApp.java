@@ -8,8 +8,6 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 /**
  * 启动器
- * @author Louis
- * @date Jan 23, 2019
  */
 @EnableTurbine
 @EnableHystrixDashboard

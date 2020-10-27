@@ -16,13 +16,11 @@ import com.fandou.coffeepower.admin.model.SysUser;
 import com.fandou.coffeepower.admin.service.SysUserService;
 import com.fandou.coffeepower.admin.util.PasswordUtils;
 import com.fandou.coffeepower.admin.util.SecurityUtils;
-import com.fandou.coffeepower.core.http.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 import com.fandou.coffeepower.core.page.PageRequest;
 
 /**
  * 用户控制器
- * @author Louis
- * @date Jan 13, 2019
  */
 @RestController
 @RequestMapping("user")

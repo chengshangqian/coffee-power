@@ -19,8 +19,6 @@ import com.fandou.coffeepower.admin.security.JwtAuthenticationProvider;
 
 /**
  * Spring Security配置
- * @author Louis
- * @date Jan 14, 2019
  */
 @Configuration
 @EnableWebSecurity	// 开启Spring Security 

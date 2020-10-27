@@ -6,8 +6,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 启动器
- * @author Louis
- * @date Jan 15, 2019
  */
 @EnableDiscoveryClient
 @SpringBootApplication(scanBasePackages={"com.fandou.coffeepower"})

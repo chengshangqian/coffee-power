@@ -11,8 +11,6 @@ import com.fandou.coffeepower.core.service.CurdService;
 
 /**
  * 用户管理
- * @author Louis
- * @date Jan 13, 2019
  */
 public interface SysUserService extends CurdService<SysUser> {
 
@@ -27,7 +25,7 @@ public interface SysUserService extends CurdService<SysUser> {
 
 	/**
 	 * 查找用户的角色集合
-	 * @param userName
+	 * @param userId
 	 * @return
 	 */
 	List<SysUserRole> findUserRoles(Long userId);

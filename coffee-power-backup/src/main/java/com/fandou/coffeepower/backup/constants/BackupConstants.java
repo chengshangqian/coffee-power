@@ -4,13 +4,11 @@ import java.io.File;
 
 /**
  * 常量类
- * @author Louis
- * @date Jan 15, 2019
  */
 public interface BackupConstants {
 	
 	/** 备份目录名称 */
-	public static final String BACKUP_FOLDER_NAME = "_mango_backup";
+	public static final String BACKUP_FOLDER_NAME = "_coffee_power_backup";
 	/** 备份目录 */
 	public static final String BACKUP_FOLDER = System.getProperty("user.home") + File.separator + BACKUP_FOLDER_NAME + File.separator;
 	/** 还原目录，默认就是备份目录 */
@@ -20,7 +18,7 @@ public interface BackupConstants {
 	/** SQL拓展名 */
 	public static final String SQL_EXT = ".sql";
 	/** 默认备份文件名 */
-	public static final String BACKUP_FILE_NAME = "mango" + SQL_EXT;
+	public static final String BACKUP_FILE_NAME = "coffee-power" + SQL_EXT;
 	/** 默认备份还原目录名称 */
 	public static final String DEFAULT_BACKUP_NAME = "backup";
 	/** 默认备份还原文件 */

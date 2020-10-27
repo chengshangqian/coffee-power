@@ -12,12 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fandou.coffeepower.admin.model.SysDept;
 import com.fandou.coffeepower.admin.service.SysDeptService;
-import com.fandou.coffeepower.core.http.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 
 /**
  * 机构控制器
- * @author Louis
- * @date Jan 13, 2019
  */
 @RestController
 @RequestMapping("dept")

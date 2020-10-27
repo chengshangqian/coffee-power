@@ -1,9 +1,7 @@
-package com.fandou.coffeepower.core.http;
+package com.fandou.coffeepower.common.http;
 
 /**
  * HTTP结果封装
- * @author Louis
- * @date Jan 12, 2019
  */
 public class HttpResult {
 

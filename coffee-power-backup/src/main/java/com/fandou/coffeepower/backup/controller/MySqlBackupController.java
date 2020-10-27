@@ -18,13 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fandou.coffeepower.backup.constants.BackupConstants;
 import com.fandou.coffeepower.backup.datasource.BackupDataSourceProperties;
 import com.fandou.coffeepower.backup.service.MysqlBackupService;
-import com.fandou.coffeepower.backup.util.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 import com.fandou.coffeepower.common.utils.FileUtils;
 
 /**
  * 系统数据备份还原
- * @author Louis
- * @date Jan 15, 2019
  */
 @RestController
 @RequestMapping("/backup")

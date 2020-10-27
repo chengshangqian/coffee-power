@@ -2,8 +2,6 @@ package com.fandou.coffeepower.core.exception;
 
 /**
  * 自定义异常
- * @author Louis
- * @date Jan 12, 2019
  */
 public class BaseException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

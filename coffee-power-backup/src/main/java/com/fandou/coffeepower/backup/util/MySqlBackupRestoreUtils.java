@@ -5,8 +5,6 @@ import java.io.IOException;
 
 /**
  * MySQL备份还原工具类
- * @author Louis
- * @date Jan 15, 2019
  */
 public class MySqlBackupRestoreUtils {
 
@@ -15,9 +13,9 @@ public class MySqlBackupRestoreUtils {
 	 * @param host host地址，可以是本机也可以是远程
 	 * @param userName 数据库的用户名
 	 * @param password 数据库的密码
-	 * @param savePath 备份的路径
+	 * @param backupFolderPath 备份的路径
 	 * @param fileName 备份的文件名
-	 * @param databaseName 需要备份的数据库的名称
+	 * @param database 需要备份的数据库的名称
 	 * @return
 	 * @throws IOException 
 	 */
@@ -98,16 +96,16 @@ public class MySqlBackupRestoreUtils {
 		String host = "localhost";
 		String userName = "root";
 		String password = "123456";
-		String database = "mango";
+		String database = "coffeepower";
 		
 		System.out.println("开始备份");
 		String backupFolderPath = "c:/dev/";
-		String fileName = "mango.sql";
+		String fileName = "coffee-power.sql";
 		backup(host, userName, password, backupFolderPath, fileName, database);
 		System.out.println("备份成功");
 		
 		System.out.println("开始还原");
-		String restoreFilePath = "c:/dev/mango.sql";
+		String restoreFilePath = "c:/dev/coffee-power.sql";
 		restore(restoreFilePath, host, userName, password, database);
 		System.out.println("还原成功");
 

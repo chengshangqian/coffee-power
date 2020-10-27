@@ -1,4 +1,4 @@
-package com.fandou.coffeepower.core.http;
+package com.fandou.coffeepower.common.http;
 
 /**
  * Constants enumerating the HTTP status codes.

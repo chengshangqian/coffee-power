@@ -27,12 +27,10 @@ import com.fandou.coffeepower.admin.util.IPUtils;
 import com.fandou.coffeepower.admin.util.PasswordUtils;
 import com.fandou.coffeepower.admin.util.SecurityUtils;
 import com.fandou.coffeepower.common.utils.IOUtils;
-import com.fandou.coffeepower.core.http.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 
 /**
  * 登录控制器
- * @author Louis
- * @date Jan 14, 2019
  */
 @RestController
 public class SysLoginController {

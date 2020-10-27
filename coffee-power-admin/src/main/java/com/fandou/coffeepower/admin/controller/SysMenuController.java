@@ -13,12 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fandou.coffeepower.admin.model.SysMenu;
 import com.fandou.coffeepower.admin.service.SysMenuService;
-import com.fandou.coffeepower.core.http.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 
 /**
  * 菜单控制器
- * @author Louis
- * @date Jan 13, 2019
  */
 @RestController
 @RequestMapping("menu")

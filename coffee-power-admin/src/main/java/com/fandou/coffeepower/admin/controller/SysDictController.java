@@ -13,13 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fandou.coffeepower.admin.model.SysDict;
 import com.fandou.coffeepower.admin.service.SysDictService;
-import com.fandou.coffeepower.core.http.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 import com.fandou.coffeepower.core.page.PageRequest;
 
 /**
  * 字典控制器
- * @author Louis
- * @date Jan 13, 2019
  */
 @RestController
 @RequestMapping("dict")

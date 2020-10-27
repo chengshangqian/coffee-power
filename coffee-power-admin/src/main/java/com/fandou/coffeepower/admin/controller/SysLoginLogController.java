@@ -11,13 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fandou.coffeepower.admin.model.SysLoginLog;
 import com.fandou.coffeepower.admin.service.SysLoginLogService;
-import com.fandou.coffeepower.core.http.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 import com.fandou.coffeepower.core.page.PageRequest;
 
 /**
  * 登录日志控制器
- * @author Louis
- * @date Jan 13, 2019
  */
 @RestController
 @RequestMapping("loginlog")

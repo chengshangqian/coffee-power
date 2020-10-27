@@ -5,8 +5,6 @@ import java.util.Date;
 
 /**
  * 日期时间相关工具
- * @author Louis
- * @date Jan 14, 2019
  */
 public class DateTimeUtils {
 
@@ -14,7 +12,6 @@ public class DateTimeUtils {
 	
 	/**
 	 * 获取当前标准格式化日期时间
-	 * @param date
 	 * @return
 	 */
 	public static String getDateTime() {

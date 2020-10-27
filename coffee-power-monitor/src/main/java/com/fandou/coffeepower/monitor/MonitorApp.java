@@ -8,8 +8,6 @@ import de.codecentric.boot.admin.server.config.EnableAdminServer;
 
 /**
  * 启动器
- * @author Louis
- * @date Jan 15, 2019
  */
 @EnableAdminServer
 @EnableDiscoveryClient

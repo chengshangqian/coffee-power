@@ -2,8 +2,6 @@ package com.fandou.coffeepower.core.page;
 
 /**
  * 分页参数
- * @author Louis
- * @date Jan 19, 2019
  */
 public class Param {
 	private String name;

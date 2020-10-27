@@ -16,13 +16,11 @@ import com.fandou.coffeepower.admin.dao.SysRoleMapper;
 import com.fandou.coffeepower.admin.model.SysRole;
 import com.fandou.coffeepower.admin.model.SysRoleMenu;
 import com.fandou.coffeepower.admin.service.SysRoleService;
-import com.fandou.coffeepower.core.http.HttpResult;
+import com.fandou.coffeepower.common.http.HttpResult;
 import com.fandou.coffeepower.core.page.PageRequest;
 
 /**
  * 角色控制器
- * @author Louis
- * @date Jan 13, 2019
  */
 @RestController
 @RequestMapping("role")
