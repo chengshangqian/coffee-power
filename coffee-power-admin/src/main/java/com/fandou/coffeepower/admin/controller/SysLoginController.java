@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.fandou.coffeepower.admin.vo.LoginBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +46,7 @@ public class SysLoginController {
 	private AuthenticationManager authenticationManager;
 
 	@GetMapping("captcha.jpg")
-	public void captcha(HttpServletResponse response, HttpServletRequest request) throws ServletException, IOException {
+	public void captcha(HttpServletResponse response, HttpServletRequest request) throws IOException {
 		response.setHeader("Cache-Control", "no-store, no-cache");
 		response.setContentType("image/jpeg");
 
@@ -65,18 +66,23 @@ public class SysLoginController {
 	 * 登录接口
 	 */
 	@PostMapping(value = "/login")
-	public HttpResult login(@RequestBody LoginBean loginBean, HttpServletRequest request) throws IOException {
+	public HttpResult login(@RequestBody LoginBean loginBean, HttpServletRequest request) {
 		String username = loginBean.getAccount();
 		String password = loginBean.getPassword();
 		String captcha = loginBean.getCaptcha();
+
 		// 从session中获取之前保存的验证码跟前台传来的验证码进行匹配
-		Object kaptcha = request.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
-//		if(kaptcha == null){
-//			return HttpResult.error("验证码已失效");
-//		}
-//		if(!captcha.equals(kaptcha)){
-//			return HttpResult.error("验证码不正确");
-//		}
+		HttpSession session = request.getSession();
+		Object kaptcha = session.getAttribute(Constants.KAPTCHA_SESSION_KEY);
+		if(kaptcha == null){
+			return HttpResult.error("验证码已失效");
+		}
+		// 无论成功与否，先清除会话中的验证码，下次应刷新验证码在登录
+		session.removeAttribute(Constants.KAPTCHA_SESSION_KEY);
+		if(!captcha.equals(kaptcha)){
+			return HttpResult.error("验证码不正确");
+		}
+
 		// 用户信息
 		SysUser user = sysUserService.findByName(username);
 		// 账号不存在、密码错误
