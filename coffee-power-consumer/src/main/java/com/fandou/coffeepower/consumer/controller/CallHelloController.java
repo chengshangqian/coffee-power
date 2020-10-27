@@ -15,7 +15,7 @@ public class CallHelloController {
 
     @RequestMapping("/call")
     public String call() {
-        ServiceInstance serviceInstance = loadBalancer.choose("mango-producer");
+        ServiceInstance serviceInstance = loadBalancer.choose("coffee-power-producer");
         System.out.println("服务地址：" + serviceInstance.getUri());
         System.out.println("服务名称：" + serviceInstance.getServiceId());
 

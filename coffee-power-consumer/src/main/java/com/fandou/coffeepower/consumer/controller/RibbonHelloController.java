@@ -14,7 +14,7 @@ public class RibbonHelloController {
     @RequestMapping("/ribbon/call")
     public String call() {
         // 调用服务, service-producer为注册的服务名称，LoadBalancerInterceptor会拦截调用并根据服务名找到对应的服务
-        String callServiceResult = restTemplate.getForObject("http://mango-producer/hello", String.class);
+        String callServiceResult = restTemplate.getForObject("http://coffee-power-producer/hello", String.class);
         return callServiceResult;
     }
 }

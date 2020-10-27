@@ -19,7 +19,7 @@ public class ServiceController {
      */
     @RequestMapping("/services")
     public Object services() {
-        return discoveryClient.getInstances("mango-producer");
+        return discoveryClient.getInstances("coffee-power-producer");
     }
 
     /**
@@ -27,6 +27,6 @@ public class ServiceController {
      */
     @RequestMapping("/discover")
     public Object discover() {
-        return loadBalancerClient.choose("mango-producer").getUri().toString();
+        return loadBalancerClient.choose("coffee-power-producer").getUri().toString();
     }
 }
