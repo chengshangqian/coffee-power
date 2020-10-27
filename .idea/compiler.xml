@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="coffee-power-zuul" />
+        <module name="coffee-power-consumer" />
+        <module name="coffee-power-producer" />
+        <module name="coffee-power-admin" />
+        <module name="coffee-power-core" />
+        <module name="coffee-power-producer2" />
+        <module name="coffee-power-backup" />
+        <module name="coffee-power-config" />
+        <module name="coffee-power-hystrix" />
+        <module name="coffee-power-monitor" />
+        <module name="coffee-power-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="coffee-power-admin" options="-parameters" />
+      <module name="coffee-power-backup" options="-parameters" />
+      <module name="coffee-power-common" options="-parameters" />
+      <module name="coffee-power-config" options="-parameters" />
+      <module name="coffee-power-consumer" options="-parameters" />
+      <module name="coffee-power-core" options="-parameters" />
+      <module name="coffee-power-hystrix" options="-parameters" />
+      <module name="coffee-power-monitor" options="-parameters" />
+      <module name="coffee-power-producer" options="-parameters" />
+      <module name="coffee-power-producer2" options="-parameters" />
+      <module name="coffee-power-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>
