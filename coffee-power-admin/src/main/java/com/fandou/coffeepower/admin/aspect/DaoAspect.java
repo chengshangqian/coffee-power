@@ -29,11 +29,11 @@ public class DaoAspect {
 	private static final String lastUpdateBy = "lastUpdateBy";
 	private static final String lastUpdateTime = "lastUpdateTime";
 
-	@Pointcut("execution(* com.louis.mango.*.dao.*.update*(..))")
+	@Pointcut("execution(* com.fandou.coffeepower.*.dao.*.update*(..))")
 	public void daoUpdate() {
 	}
 
-	@Pointcut("execution(* com.louis.mango.*.dao.*.insert*(..))")
+	@Pointcut("execution(* com.fandou.coffeepower.*.dao.*.insert*(..))")
 	public void daoCreate() {
 	}
 
@@ -55,9 +55,8 @@ public class DaoAspect {
 				}
 			}
 		}
-		Object object = pjp.proceed();
-		return object;
 
+		return pjp.proceed();
 	}
 
 	@Around("daoCreate()")
@@ -80,8 +79,8 @@ public class DaoAspect {
 				}
 			}
 		}
-		Object object = pjp.proceed();
-		return object;
+
+		return pjp.proceed();
 	}
 
 	private String getUserName() {

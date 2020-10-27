@@ -53,7 +53,7 @@ public class SysLogAspect {
 		SysLog sysLog = new SysLog();
 		
 //		Method method = signature.getMethod();
-//		com.louis.merak.admin.annotation.SysLog syslogAnno = method.getAnnotation(com.louis.merak.admin.annotation.SysLog.class);
+//		com.fandou.coffeepower.admin.annotation.SysLog syslogAnno = method.getAnnotation(com.fandou.coffeepower.admin.annotation.SysLog.class);
 //		if(syslogAnno != null){
 //			//注解上的描述
 //			sysLog.setOperation(syslogAnno.value());
@@ -73,6 +73,7 @@ public class SysLogAspect {
 			}
 			sysLog.setParams(params);
 		} catch (Exception e){
+			// do nothing
 		}
 
 		// 获取request
